@@ -1,0 +1,374 @@
+.about-section {
+    min-height: 380px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 45px 80px;
+
+    background-color: var(--color-background);
+}
+
+
+.about-info {
+    width: 48%;
+}
+
+
+.about-info h1 {
+    margin-bottom: 15px;
+
+    font-size: 34px;
+}
+
+
+.about-info > p:not(.section-label) {
+    max-width: 480px;
+
+    color: var(--color-grey);
+
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+.main-button {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 13px 22px;
+
+    background-color: var(--color-green);
+    color: var(--color-white);
+
+    border-radius: 6px;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.main-button:hover {
+    background-color: var(--color-dark-green);
+    transform: translateY(-3px);
+}
+
+
+.about-image {
+    width: 42%;
+}
+
+
+.about-image img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+
+/* Продукція */
+
+.products-section {
+    min-height: 500px;
+
+    padding: 35px 95px 55px;
+
+    background-color: var(--color-background-second);
+}
+
+
+.products-section h2 {
+    margin-bottom: 25px;
+
+    font-size: 32px;
+}
+
+
+.products-list {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 55px;
+}
+
+
+.product-card {
+    width: 280px;
+    min-height: 310px;
+
+    padding: 12px;
+
+    overflow: hidden;
+
+    background-color: var(--color-white);
+
+    border-radius: 15px;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Збільшення картки при наведенні */
+
+.product-card:hover {
+    transform: var(--card-hover);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.product-card img {
+    width: 100%;
+    height: 175px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* Збільшення картинки */
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+
+.product-info {
+    padding: 16px 5px 5px;
+}
+
+
+.product-info h3 {
+    margin-bottom: 8px;
+
+    font-size: 17px;
+}
+
+
+.product-info p {
+    color: var(--color-grey);
+
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+
+/* Історія */
+
+.history-section {
+    min-height: 390px;
+
+    padding: 45px 110px;
+
+    background-color: var(--color-background);
+}
+
+
+.history-section h2 {
+    margin-bottom: 12px;
+
+    font-size: 32px;
+}
+
+
+.history-description {
+    width: 430px;
+
+    color: var(--color-grey);
+
+    line-height: 1.4;
+}
+
+
+.timeline {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 45px;
+}
+
+
+/* Горизонтальна лінія */
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 38px;
+    left: 30px;
+    right: 30px;
+
+    height: 2px;
+
+    background-color: var(--color-green);
+}
+
+
+.timeline-item {
+    position: relative;
+    z-index: 1;
+
+    width: 180px;
+
+    text-align: center;
+}
+
+
+.timeline-item h3 {
+    margin-bottom: 8px;
+
+    font-size: 16px;
+}
+
+
+.timeline-point {
+    width: 16px;
+    height: 16px;
+
+    margin: 0 auto 12px;
+
+    background-color: var(--color-green);
+
+    border-radius: 50%;
+}
+
+
+.timeline-item p {
+    color: var(--color-grey);
+
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+
+/* Контакти */
+
+.contacts-section {
+    min-height: 340px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 45px 110px;
+
+    background-color: var(--color-background);
+}
+
+
+.contacts-info {
+    width: 45%;
+}
+
+
+.contacts-info h2 {
+    margin-bottom: 25px;
+
+    font-size: 32px;
+}
+
+
+.contacts-info > p:not(.section-label) {
+    margin-bottom: 14px;
+
+    color: var(--color-grey);
+}
+
+
+.contact-icon {
+    display: inline-block;
+
+    width: 25px;
+
+    color: var(--color-green);
+}
+
+
+/* Форма */
+
+.contact-form {
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-form label {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    margin-bottom: 10px;
+    padding: 11px 15px;
+
+    background-color: var(--color-white);
+
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+
+    outline: none;
+}
+
+
+.contact-form textarea {
+    height: 70px;
+
+    resize: none;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--color-green);
+}
+
+
+.contact-form button {
+    width: 150px;
+
+    align-self: flex-end;
+
+    padding: 11px;
+
+    background-color: var(--color-green);
+    color: var(--color-white);
+
+    border-radius: 5px;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.contact-form button:hover {
+    background-color: var(--color-dark-green);
+    transform: translateY(-2px);
+}

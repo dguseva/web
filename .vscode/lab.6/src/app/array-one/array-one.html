@@ -1,0 +1,102 @@
+<section class="container">
+
+  <div class="heading">
+    <h1>Одновимірний масив</h1>
+
+    <p>
+      Введіть з клавіатури п’ять цілочисельних елементів масиву X. 
+      Виведіть на екран значення коренів і квадратів кожного з елементів масиву.
+    </p>
+  </div>
+
+  <div class="card">
+
+    <h2>Введення елементів масиву X</h2>
+
+    <div class="inputs">
+
+      @for (item of elements; track $index) {
+        <div class="input-group">
+
+          <label>Елемент X[{{ $index + 1 }}]</label>
+
+          <input
+            type="number"
+            name="element{{ $index }}"
+            [(ngModel)]="elements[$index]"
+            step="1"
+            required
+            placeholder="Введіть ціле число"
+          />
+
+        </div>
+      }
+
+    </div>
+
+    @if (!isValid) {
+      <p class="hint">
+        Заповніть усі п'ять полів цілими числами.
+      </p>
+    }
+
+    <div class="buttons">
+
+      <button
+        (click)="calculate()"
+        [disabled]="!isValid"
+      >
+        Обчислити
+      </button>
+
+      <button
+        class="reset"
+        (click)="reset()"
+      >
+        Очистити
+      </button>
+
+    </div>
+
+    @if (squares.length === 5) {
+
+      <div class="results">
+
+        <h2>Результати обчислень</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Елемент</th>
+              <th>Значення</th>
+              <th>Квадрат</th>
+              <th>Корінь</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            @for (x of elements; track $index) {
+              <tr>
+                <td>X[{{ $index + 1 }}]</td>
+                <td>{{ x }}</td>
+                <td>{{ squares[$index] }}</td>
+                <td>
+                  @if (roots[$index] !== null) {
+                    {{ roots[$index] }}
+                  } @else {
+                    Не існує в дійсних числах
+                  }
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+
+      </div>
+
+    }
+
+  </div>
+
+</section>
+

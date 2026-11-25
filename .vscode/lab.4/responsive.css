@@ -1,0 +1,287 @@
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+
+    .page-body {
+        grid-template-columns:
+            minmax(0, 3fr)
+            minmax(250px, 1fr);
+    }
+
+}
+
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* Header */
+
+    .top {
+        flex-direction: column;
+    }
+
+    .header {
+        width: 100%;
+        flex: none;
+
+        justify-content: center;
+
+        padding: 1.5rem;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu ul {
+        gap: 2rem;
+    }
+
+
+    /* Основна структура */
+
+    .page-body {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Про компанію */
+
+    .about-section {
+        gap: 2rem;
+    }
+
+
+    /* Sidebar */
+
+    .advertisement {
+        text-align: center;
+    }
+
+    .advertisement-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .advantages {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+
+    /* Footer */
+
+    .footer {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        text-align: center;
+
+        padding: 2rem;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+    body {
+        background-color: var(--color-background);
+    }
+
+
+    /* Header */
+
+    .top {
+        flex-direction: column;
+
+        min-height: auto;
+    }
+
+    .header {
+        width: 100%;
+        flex: none;
+
+        justify-content: center;
+
+        padding: 1.5rem 1rem;
+    }
+
+
+    /* Меню */
+
+    .menu {
+        width: 100%;
+
+        padding: 0;
+    }
+
+    .menu ul {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        text-align: center;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu a {
+        display: block;
+
+        width: 100%;
+
+        padding: 0.9rem;
+
+        border-top:
+            1px solid var(--color-border);
+    }
+
+    .menu a::after {
+        display: none;
+    }
+
+
+    /* Основна сітка */
+
+    .page-body {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Про компанію */
+
+    .about-section {
+        flex-direction: column;
+
+        gap: 2rem;
+
+        padding: 2rem 1.25rem;
+    }
+
+    .about-info,
+    .about-image {
+        width: 100%;
+    }
+
+
+    /* Секції */
+
+    .stats-section,
+    .products-section,
+    .gallery-section,
+    .history-section,
+    .reviews-section,
+    .contacts-section {
+        padding: 2rem 1.25rem;
+    }
+
+
+    /* Картки */
+
+    .stats-grid,
+    .products-list,
+    .gallery-grid,
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Timeline стає вертикальним */
+
+    .timeline {
+        flex-direction: column;
+
+        gap: 2rem;
+    }
+
+    .timeline::before {
+        top: 0;
+        bottom: 0;
+
+        left: 0.45rem;
+        right: auto;
+
+        width: 2px;
+        height: auto;
+    }
+
+    .timeline-item {
+        width: 100%;
+
+        padding-left: 2rem;
+
+        text-align: left;
+    }
+
+    .timeline-point {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        margin: 0;
+    }
+
+
+    /* Контакти */
+
+    .contacts-section {
+        flex-direction: column;
+
+        gap: 2rem;
+    }
+
+    .contacts-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+
+        justify-self: stretch;
+    }
+
+
+    /* Sidebar */
+
+    .advertisement {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .advertisement-label {
+        margin-bottom: 2rem;
+    }
+
+    .advantages {
+        grid-template-columns: 1fr;
+
+        padding: 2rem 1.25rem;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 2rem 1.25rem;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+
+        gap: 0.75rem;
+    }
+
+}

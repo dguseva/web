@@ -1,0 +1,20 @@
+body {
+   padding: 30px;
+   color: rgb(25, 231, 14);
+   background-color: #323232;
+}
+
+header {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+li {
+   margin: 10px 10px;
+   font-size: 20px;
+}
+
+a {
+   color: rgb(15, 234, 15);
+}

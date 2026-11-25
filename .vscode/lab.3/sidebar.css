@@ -1,0 +1,101 @@
+.sidebar {
+    background-color: #e9dfc9;
+}
+
+
+/* Верхня зелена рекламна частина */
+
+.advertisement {
+    min-height: 850px;
+
+    padding: 50px 40px;
+
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+}
+
+
+.advertisement-label {
+    margin-bottom: 80px;
+
+    font-size: 12px;
+}
+
+
+.advertisement h2 {
+    margin-bottom: 30px;
+
+    color: var(--color-white);
+
+    font-size: 42px;
+    line-height: 1.15;
+}
+
+
+.advertisement-text {
+    width: 210px;
+
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+.advertisement-button {
+    display: inline-block;
+
+    padding: 14px 18px;
+
+    background-color: var(--color-background);
+    color: var(--color-dark-green);
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+
+.advertisement-button:hover {
+    transform: scale(1.04);
+
+    background-color: var(--color-white);
+}
+
+
+/* Нижня частина sidebar */
+
+.advantages {
+    padding: 55px 38px;
+
+    background-color: #e9dfc9;
+}
+
+
+.advantage {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 50px;
+}
+
+
+.advantage span {
+    color: var(--color-green);
+
+    font-size: 20px;
+}
+
+
+.advantage p {
+    color: var(--color-grey);
+
+    font-size: 16px;
+    line-height: 1.35;
+}

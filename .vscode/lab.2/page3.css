@@ -1,0 +1,7 @@
+body {
+    background-image: url("../lab.2/img/fon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}

@@ -1,0 +1,76 @@
+
+.hero {
+    min-height: 570px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(12, 30, 50, 0.92),
+            rgba(12, 30, 50, 0.35)
+        ),
+        url("/images/university.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 10%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-label {
+    color: #e2bd78;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #e0e5eb;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #d5ad62;
+    color: #142b45;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: white;
+}
+
+@media (max-width: 650px) {
+    .hero {
+        min-height: 500px;
+        padding: 50px 25px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+}

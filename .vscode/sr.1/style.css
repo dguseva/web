@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f7;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Шапка */
+.header {
+    background: linear-gradient(135deg, #24445d, #347b85);
+    color: white;
+    padding: 35px 8%;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.student-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.student-info p {
+    font-size: 14px;
+}
+
+/* Основна частина */
+.container {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* Завдання */
+.task {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border-left: 5px solid #347b85;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.task h2 {
+    margin-bottom: 10px;
+    color: #24445d;
+}
+
+/* Каталог */
+.catalog {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+}
+
+.catalog-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.catalog-heading h2 {
+    color: #24445d;
+}
+
+.catalog-heading p {
+    color: #7b8790;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    background: #347b85;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #245b65;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+/* Повідомлення */
+.status {
+    background: #edf4f6;
+    color: #345a68;
+    padding: 12px 15px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.status.error {
+    background: #fff0f0;
+    color: #b42318;
+}
+
+/* Статистика */
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.stat-card {
+    background: #f2f6f7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-card span {
+    display: block;
+    color: #71818a;
+    font-size: 14px;
+}
+
+.stat-card strong {
+    display: block;
+    font-size: 30px;
+    color: #347b85;
+}
+
+/* Групи газет */
+.newspaper-group {
+    margin-bottom: 35px;
+}
+
+.group-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e8edef;
+    margin-bottom: 18px;
+}
+
+.group-title h3 {
+    color: #24445d;
+    font-size: 21px;
+}
+
+.group-label {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.printed-label {
+    background: #e2f2e9;
+    color: #28734a;
+}
+
+.electronic-label {
+    background: #e5effb;
+    color: #2865a5;
+}
+
+/* Картки газет */
+.newspaper-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.newspaper-card {
+    border: 1px solid #e5eaed;
+    border-radius: 10px;
+    padding: 20px;
+    background: #ffffff;
+    transition: 0.2s;
+}
+
+.newspaper-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.newspaper-card h4 {
+    font-size: 18px;
+    color: #24445d;
+    margin-bottom: 12px;
+}
+
+.newspaper-card p {
+    font-size: 14px;
+    color: #65747c;
+    margin-bottom: 5px;
+}
+
+.empty-message {
+    color: #89969d;
+    padding: 15px 0;
+}
+
+/* Нижня частина */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #7b8790;
+    font-size: 13px;
+}
+
+/* Для мобільній версії */
+@media (max-width: 650px) {
+    .header {
+        padding: 25px 20px;
+    }
+
+    .student-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .catalog-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+
+    .newspaper-list {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "sectionLabel": "НАШІ НАПРЯМИ",
+  "title": "Факультети та спеціальності",
+  "description": "Обирай напрям, який відповідає твоїм інтересам та майбутнім професійним цілям.",
+  "faculties": [
+    {
+      "id": 1,
+      "name": "Факультет інформаційних технологій",
+      "specialties": "Комп'ютерні науки, інженерія програмного забезпечення",
+      "icon": "IT",
+      "image": "/images/faculty-it.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Економічний факультет",
+      "specialties": "Економіка, фінанси, менеджмент",
+      "icon": "EC",
+      "image": "/images/faculty-economics.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Юридичний факультет",
+      "specialties": "Право, міжнародне право",
+      "icon": "LAW",
+      "image": "/images/faculty-law.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Факультет гуманітарних наук",
+      "specialties": "Філологія, історія, журналістика",
+      "icon": "HU",
+      "image": "/images/faculty-humanities.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Факультет природничих наук",
+      "specialties": "Біологія, хімія, екологія",
+      "icon": "NS",
+      "image": "/images/faculty-science.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Факультет міжнародних відносин",
+      "specialties": "Міжнародні відносини, політологія",
+      "icon": "IR",
+      "image": "/images/faculty-international.jpg"
+    }
+  ]
+}

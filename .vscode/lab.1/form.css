@@ -1,0 +1,30 @@
+form {
+   padding: 10px 5px;
+   border: 1px solid #ebebeb;
+}
+
+fieldset {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   width: 95%;
+}
+
+fieldset div {
+   display: flex;
+   width: 30%;
+   flex-direction: column;
+}
+
+input {
+   padding: 5px;
+   border-radius: 5px;
+   margin: 10px;
+   width: 100%;
+}
+
+button {
+   margin: 5px 2px;
+   border-radius: 5px;
+   height: 30px;
+}

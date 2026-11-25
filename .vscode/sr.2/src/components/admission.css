@@ -1,0 +1,86 @@
+
+.admission {
+    padding: 85px 8%;
+    background: #142b45;
+    color: white;
+}
+
+.admission-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.admission-info h2 {
+    font-size: 38px;
+    line-height: 1.3;
+    margin: 18px 0;
+}
+
+.admission-info > p {
+    color: #c6d0da;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.admission-button {
+    display: inline-block;
+    background: #d5ad62;
+    color: #142b45;
+    padding: 14px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.admission-button:hover {
+    background: white;
+}
+
+.admission-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.admission-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.admission-step > span {
+    color: #d5ad62;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.admission-step h3 {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.admission-step p {
+    color: #c6d0da;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+@media (max-width: 750px) {
+    .admission-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .admission-info h2 {
+        font-size: 30px;
+    }
+}

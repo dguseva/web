@@ -1,0 +1,26 @@
+{
+  "universityName": "UNIVERSITY",
+  "description": "Освіта, яка відкриває можливості. Створюй своє майбутнє разом із нами.",
+  "address": "м. Київ, Україна",
+  "email": "info@university.ua",
+  "phone": "+380 44 000 00 00",
+  "socials": [
+    {
+      "name": "Instagram",
+      "link": "https://www.instagram.com/"
+    },
+    {
+      "name": "Facebook",
+      "link": "https://www.facebook.com/"
+    },
+    {
+      "name": "Telegram",
+      "link": "https://telegram.org/"
+    },
+    {
+      "name": "YouTube",
+      "link": "https://www.youtube.com/"
+    }
+  ],
+  "copyright": "© 2026 UNIVERSITY. Усі права захищені."
+}

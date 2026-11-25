@@ -1,0 +1,165 @@
+<section class="main-container">
+
+  <div class="intro">
+    <h1>Розрахунок доходу співробітників</h1>
+    <p>
+      Введіть інформацію про співробітника,
+      щоб розрахувати його дохід.
+    </p>
+  </div>
+
+  <div class="calculator">
+
+    <h2>Дані співробітника</h2>
+
+    <form #employeeForm="ngForm"
+          (ngSubmit)="calculate()">
+
+      <div class="form-group">
+        <label for="name">Прізвище та ім'я співробітника</label>
+
+        <input
+          type="text"
+          id="name"
+          name="name"
+          [(ngModel)]="name"
+          #nameInput="ngModel"
+          required
+          minlength="1"
+          maxlength="100"
+          pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ '-]+"
+          placeholder="Введіть прізвище та ім'я"
+        />
+
+        @if (nameInput.invalid && nameInput.touched) {
+          <small class="error">
+            Введіть тільки літери.
+          </small>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="p">Мінімальна зарплата</label>
+
+        <input
+          type="number"
+          id="p"
+          name="p"
+          [(ngModel)]="p"
+          #pInput="ngModel"
+          required
+          min="1"
+          max="10000000"
+          placeholder="Введіть суму"
+        />
+
+        @if (pInput.invalid && pInput.touched) {
+          <small class="error">
+            Зарплата повинна бути від 1 до 10 000 000 грн.
+          </small>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="k">Коефіцієнт підвищення</label>
+
+        <input
+          type="number"
+          id="k"
+          name="k"
+          [(ngModel)]="k"
+          #kInput="ngModel"
+          required
+          min="0.1"
+          max="100"
+          step="0.1"
+          placeholder="Коефіцієнт"
+        />
+
+        @if (kInput.invalid && kInput.touched) {
+          <small class="error">
+            Коефіцієнт повинен бути від 0.1 до 100.
+          </small>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="n">Кількість розроблених проєктів</label>
+
+        <input
+          type="number"
+          id="n"
+          name="n"
+          [(ngModel)]="n"
+          #nInput="ngModel"
+          required
+          min="1"
+          max="10000"
+          step="1"
+          placeholder="Введіть кількість проєктів"
+        />
+
+        @if (nInput.invalid && nInput.touched) {
+          <small class="error">
+            Кількість проєктів повинна бути цілим числом
+            від 1 до 10000.
+          </small>
+        }
+      </div>
+
+      <div class="buttons">
+        <button
+          type="submit"
+          [disabled]="employeeForm.invalid"
+        >
+          Розрахувати дохід
+        </button>
+
+        <button
+          type="button"
+          class="reset-button"
+          (click)="reset()"
+        >
+          Очистити
+        </button>
+      </div>
+
+    </form>
+
+    @if (employeeIncome !== null && engineerIncome !== null) {
+
+      <div class="results">
+
+        <h2>Результати розрахунку</h2>
+
+        <div class="result-card">
+          <h3>Співробітник</h3>
+
+          <p>Ім'я: {{ name }}</p>
+          <p>Мінімальна зарплата: {{ p }} грн</p>
+          <p>Коефіцієнт: {{ k }}</p>
+
+          <div class="income">
+            Дохід: {{ employeeIncome | number:'1.2-2' }} грн
+          </div>
+        </div>
+
+        <div class="result-card engineer-card">
+          <h3>Інженер</h3>
+
+          <p>Ім'я: {{ name }}</p>
+          <p>Кількість проєктів: {{ n }}</p>
+          <p>Коефіцієнт проєктів: {{ n! / 10 }}</p>
+
+          <div class="income">
+            Дохід: {{ engineerIncome | number:'1.2-2' }} грн
+          </div>
+        </div>
+
+      </div>
+    }
+
+  </div>
+
+</section>
+

@@ -1,0 +1,109 @@
+.top {
+    width: 1440px;
+    height: 100px;
+
+    display: flex;
+
+    background-color: var(--color-background);
+
+    border-bottom: 1px solid #777777;
+}
+
+
+/* Логотип */
+
+.header {
+    width: 360px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 85px;
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo-name {
+    font-family: var(--font-heading);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+.logo-text {
+    margin-top: 4px;
+
+    color: var(--color-grey);
+
+    font-size: 10px;
+}
+
+
+/* Меню */
+
+.menu {
+    width: 1080px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu ul {
+    display: flex;
+    align-items: center;
+
+    gap: 75px;
+}
+
+
+.menu a {
+    position: relative;
+
+    color: var(--color-dark);
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+
+/* Зміна пункту меню при наведенні */
+
+.menu a:hover {
+    color: var(--color-green);
+}
+
+
+/* Підкреслення */
+
+.menu a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: var(--color-green);
+
+    transition: width 0.3s ease;
+}
+
+
+.menu a:hover::after {
+    width: 100%;
+}

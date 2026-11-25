@@ -1,0 +1,34 @@
+{
+  "universityName": "UNIVERSITY",
+  "universitySubtitle": "НАЦІОНАЛЬНИЙ УНІВЕРСИТЕТ",
+  "menu": [
+    {
+      "title": "Головна",
+      "link": "#home"
+    },
+    {
+      "title": "Про університет",
+      "link": "#about"
+    },
+    {
+      "title": "Факультети",
+      "link": "#faculties"
+    },
+    {
+      "title": "Новини",
+      "link": "#news"
+    },
+    {
+      "title": "Вступникам",
+      "link": "#admission"
+    },
+    {
+      "title": "Контакти",
+      "link": "#contacts"
+    }
+  ],
+  "heroTitle": "Твоя освіта - твоє майбутнє",
+  "heroDescription": "Відкривай нові можливості, отримуй якісні знання та створюй власну історію успіху разом із нами.",
+  "heroButton": "Обрати спеціальність",
+  "heroImage": "/images/university.jpg"
+}

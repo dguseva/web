@@ -1,0 +1,97 @@
+<section class="container">
+
+  <div class="heading">
+    <h1>Двовимірний масив</h1>
+
+    <p>
+      Дано цілочисельний масив В [1..4, 1..3]. 
+      Замінити всі його елементи їх квадратами.
+
+    </p>
+  </div>
+
+  <div class="card">
+
+    <h2>Введення матриці B (4 × 3)</h2>
+
+    <div class="matrix">
+
+      @for (row of matrix; track $index; let i = $index) {
+
+        @for (item of row; track $index; let j = $index) {
+
+          <div class="input-group">
+
+            <label>B[{{ i + 1 }}, {{ j + 1 }}]</label>
+
+            <input
+              type="number"
+              name="cell{{ i }}{{ j }}"
+              [(ngModel)]="matrix[i][j]"
+              step="1"
+              required
+              placeholder="Число"
+            />
+
+          </div>
+
+        }
+
+      }
+
+    </div>
+
+    @if (!isValid) {
+      <p class="hint">
+        Заповніть усі 12 клітинок цілими числами.
+      </p>
+    }
+
+    <div class="buttons">
+
+      <button
+        (click)="calculate()"
+        [disabled]="!isValid"
+      >
+        Обчислити квадрати
+      </button>
+
+      <button
+        class="reset"
+        (click)="reset()"
+      >
+        Очистити
+      </button>
+
+    </div>
+
+    @if (result !== null) {
+
+      <div class="results">
+
+        <h2>Результат — матриця B²</h2>
+
+        <div class="result-matrix">
+
+          @for (row of result; track $index) {
+
+            @for (value of row; track $index) {
+
+              <div class="result-cell">
+                {{ value }}
+              </div>
+
+            }
+
+          }
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+
+</section>
+

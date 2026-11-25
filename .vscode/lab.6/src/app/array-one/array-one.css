@@ -1,0 +1,126 @@
+.container {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  color: #26364a;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heading h1 {
+  font-size: 30px;
+}
+
+.heading p {
+  color: #697586;
+  line-height: 1.6;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #cbd3dd;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3979b9;
+}
+
+.hint {
+  color: #d73535;
+  font-size: 13px;
+  margin-top: 18px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 7px;
+  background: #3979b9;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #aab5c1;
+  cursor: not-allowed;
+}
+
+.reset {
+  background: #687789;
+}
+
+.results {
+  margin-top: 35px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 13px;
+  border: 1px solid #dce2e9;
+  text-align: center;
+}
+
+th {
+  background: #26364a;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .inputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}

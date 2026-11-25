@@ -1,0 +1,39 @@
+.top {
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+}
+
+.header {
+    width: 400px;
+    height: var(--header-height);
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 60px;
+
+    background-color: var(--color-background);
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-name {
+    font-family: var(--font-heading);
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--color-dark);
+    line-height: 1;
+}
+
+.logo-text {
+    margin-top: 7px;
+
+    font-family: var(--font-text);
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    color: var(--color-grey);
+}
+}

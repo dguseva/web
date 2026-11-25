@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #EDF1F5;
+  font-family: Arial, sans-serif;
+  color: #09de8d;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+

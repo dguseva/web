@@ -1,0 +1,44 @@
+body 
+/* Колір посилань */
+a {
+    color: rgb(63, 245, 63);
+}
+
+/* Перший абзац:
+   темно-сірий текст + курсив */
+.p1 {
+    color: #444444;
+    font-style: italic;
+}
+
+/* Другий абзац:
+   напівжирний текст */
+.p2 {
+    font-weight: bold;
+}
+
+/* Третій абзац:
+   перше слово червоне */
+.p3 span {
+    color: red;
+}
+
+/* Зображення зліва */
+.img_left {
+    float: left;
+    width: 30%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/* Зображення справа */
+.img_right {
+    float: right;
+    width: 30%;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.clear {
+    clear: both;
+}

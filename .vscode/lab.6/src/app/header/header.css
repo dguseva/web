@@ -1,0 +1,77 @@
+.header {
+  width: 100%;
+  background: #0fc86c;
+  color: #FFFFFF;
+  padding: 25px 20px 0;
+  box-sizing: border-box;
+}
+
+.header-title {
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-title h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.header-title h2 {
+  margin: 8px 0;
+  font-size: 19px;
+  font-weight: 500;
+  color: #f8f8f8;
+}
+
+.header-title p {
+  margin: 12px 0 22px;
+  font-size: 14px;
+  color: #E0E8F0;
+}
+
+.navigation {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.navigation a {
+  display: inline-block;
+  padding: 15px 20px;
+  color: #DCE5EF;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+  border-bottom: 3px solid transparent;
+}
+
+.navigation a:hover {
+  color: #FFFFFF;
+  background: rgba(255,255,255,0.08);
+}
+
+.navigation a.active {
+  color: #FFFFFF;
+  background: rgba(38,150,126,0.25);
+  border-bottom: 3px solid #26967E;
+}
+
+@media (max-width: 650px) {
+  .header-title h1 {
+    font-size: 25px;
+  }
+
+  .navigation a {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+}
+

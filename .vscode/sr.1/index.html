@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sr1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Самостійна робота</h1>
+        <h2>Робота з хмарними сховищами</h2>
+
+        <div class="student-info">
+            <p>Виконала студентка групи КН-31 Гусєва Дарія </p>
+            <p>Варіант 2</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="task">
+            <h2>Завдання</h2>
+            <p>
+                Завдання: Необхідно створити сторінку для обробки JSON файлу отриманого
+                з хмарного сховища, а саме
+                1. Зчитати інформацію,
+                2. Створити базовий клас для роботи з даними,
+                3. Вивести інформацію поділивши її на декілька груп.
+                Каталог газет в який входять друковані та електронні видання.
+            </p>
+        </section>
+
+        <section class="catalog">
+            <div class="catalog-heading">
+                <div>
+                    <h2>Каталог газет</h2>
+                    <p>Перелік друкованих та електронних видань</p>
+                </div>
+
+                <button id="loadButton">
+                    Завантажити дані
+                </button>
+            </div>
+
+            <div id="status" class="status">
+                Натисніть кнопку, щоб отримати дані з хмарного сховища.
+            </div>
+
+            <div class="statistics">
+                <div class="stat-card">
+                    <span>Усього видань</span>
+                    <strong id="totalCount">0</strong>
+                </div>
+
+                <div class="stat-card">
+                    <span>Друковані</span>
+                    <strong id="printedCount">0</strong>
+                </div>
+
+                <div class="stat-card">
+                    <span>Електронні</span>
+                    <strong id="electronicCount">0</strong>
+                </div>
+            </div>
+
+            <section class="newspaper-group">
+                <div class="group-title">
+                    <h3>Друковані видання</h3>
+                    <span class="group-label printed-label">
+                        Printed
+                    </span>
+                </div>
+
+                <div id="printedList" class="newspaper-list">
+                    <p class="empty-message">
+                        Дані ще не завантажені.
+                    </p>
+                </div>
+            </section>
+
+            <section class="newspaper-group">
+                <div class="group-title">
+                    <h3>Електронні видання</h3>
+                    <span class="group-label electronic-label">
+                        Electronic
+                    </span>
+                </div>
+
+                <div id="electronicList" class="newspaper-list">
+                    <p class="empty-message">
+                        Дані ще не завантажені.
+                    </p>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

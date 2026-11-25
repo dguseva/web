@@ -1,0 +1,21 @@
+:root {
+    /* Кольори */
+    --color-background: #f5f1e8;
+    --color-background-second: #e9e4d9;
+    --color-green: #526b4e;
+    --color-dark-green: #34412f;
+    --color-dark: #252525;
+    --color-grey: #4a4848;
+    --color-white: #ffffff;
+    --color-footer: #202126;
+    --color-border: #d9d9d9;
+
+    /* Шрифти */
+    --font-main: "Inter", sans-serif;
+    --font-heading: "Montserrat", sans-serif;
+
+    --font-size-p: 16px;
+
+    /* Hover */
+    --card-hover: translateY(-10px);
+}

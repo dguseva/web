@@ -1,0 +1,58 @@
+.about-section {
+    min-height: 380px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 45px 80px;
+
+    background-color: var(--color-background);
+}
+
+
+.about-info {
+    width: 48%;
+}
+
+
+.about-info h1 {
+    margin-bottom: 15px;
+
+    font-size: 34px;
+}
+
+
+.about-info > p:not(.section-label) {
+    max-width: 480px;
+
+    color: var(--color-grey);
+
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+.main-button {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 13px 22px;
+
+    background-color: var(--color-green);
+    color: var(--color-white);
+
+    border-radius: 6px;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.main-button:hover {
+    background-color: var(--color-dark-green);
+    transform: translateY(-3px);
+}
+
+

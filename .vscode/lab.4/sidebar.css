@@ -1,0 +1,93 @@
+.sidebar {
+    background-color: #e9dfc9;
+}
+
+
+/* Рекламний блок */
+
+.advertisement {
+    padding: clamp(2rem, 4vw, 3rem);
+
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+}
+
+.advertisement-label {
+    margin-bottom: clamp(2rem, 6vw, 5rem);
+
+    font-size: 0.75rem;
+}
+
+.advertisement h2 {
+    margin-bottom: 2rem;
+
+    color: var(--color-white);
+
+    font-size: clamp(2rem, 4vw, 2.625rem);
+    line-height: 1.15;
+}
+
+.advertisement-text {
+    max-width: 14rem;
+
+    margin-bottom: 2rem;
+
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.advertisement-button {
+    display: inline-block;
+
+    padding: 0.9rem 1.1rem;
+
+    background-color: var(--color-background);
+    color: var(--color-dark-green);
+
+    border-radius: 8px;
+
+    font-size: 0.875rem;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.advertisement-button:hover {
+    transform: scale(1.04);
+
+    background-color: var(--color-white);
+}
+
+
+/* Переваги */
+
+.advantages {
+    display: grid;
+
+    gap: 2rem;
+
+    padding: clamp(2rem, 4vw, 3rem);
+
+    background-color: #e9dfc9;
+}
+
+.advantage {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 0.75rem;
+}
+
+.advantage span {
+    color: var(--color-green);
+
+    font-size: 1.25rem;
+}
+
+.advantage p {
+    color: var(--color-grey);
+
+    font-size: 1rem;
+    line-height: 1.35;
+}

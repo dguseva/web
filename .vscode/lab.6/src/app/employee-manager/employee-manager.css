@@ -1,0 +1,154 @@
+.main-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  color: #26364a;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro h1 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.intro p {
+  color: #697586;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.calculator {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.calculator h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 13px;
+  border: 1px solid #cbd3dd;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #3979b9;
+  box-shadow: 0 0 0 2px rgba(57, 121, 185, 0.12);
+}
+
+.error {
+  color: #d73535;
+  margin-top: 7px;
+  font-size: 12px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 7px;
+  background: #3979b9;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #285e96;
+}
+
+button:disabled {
+  background: #aab5c1;
+  cursor: not-allowed;
+}
+
+.reset-button {
+  background: #687789;
+}
+
+.reset-button:hover {
+  background: #4c5969;
+}
+
+.results {
+  margin-top: 35px;
+}
+
+.result-card {
+  padding: 22px;
+  margin-top: 18px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  border-left: 4px solid #3979b9;
+}
+
+.engineer-card {
+  border-left-color: #26967e;
+}
+
+.result-card h3 {
+  margin-top: 0;
+}
+
+.result-card p {
+  font-size: 14px;
+  color: #536173;
+}
+
+.income {
+  margin-top: 18px;
+  font-size: 19px;
+  font-weight: bold;
+  color: #247d69;
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    margin: 25px auto;
+  }
+
+  .calculator {
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 23px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}

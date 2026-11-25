@@ -1,0 +1,70 @@
+@import url("reset.css");
+@import url("base.css");
+@import url("menu.css");
+@import url("content.css");
+@import url("sidebar.css");
+@import url("footer.css");
+
+
+body {
+    background-color: #1f1f1f;
+    font-family: var(--font-main);
+    color: var(--color-dark);
+}
+
+
+/* Головний контейнер сайту */
+
+.container {
+    width: var(--width);
+    margin: 40px auto;
+
+    background-color: var(--color-background);
+
+    font-family: var(--font-main);
+    font-size: var(--font-size-p);
+}
+
+
+/*
+    Основна частина:
+    зліва content,
+    справа sidebar
+*/
+
+.page-body {
+    display: flex;
+    align-items: stretch;
+}
+
+
+.content {
+    width: 1110px;
+}
+
+
+.sidebar {
+    width: 330px;
+}
+
+
+/* Загальні заголовки */
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    color: var(--color-dark);
+}
+
+
+.section-label {
+    margin-bottom: 12px;
+
+    color: var(--color-green);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+   <head>
+      <meta charset="UTF-8" />
+      <title>lab1</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <link rel="stylesheet" href="form.css" />
+   </head>
+
+   <body>
+      <header>
+         <h1>Проєктування та розробка веб-застосунків</h1>
+
+         <h2>Лабораторна робота №1</h2>
+
+         <h2>
+            Виконала студентка групи КН-31 Гусєва Д.А. | Варіант №2
+         </h2>
+
+         <a href="index.html">Головна</a>
+
+         <h1>Завдання:</h1>
+
+         <span>
+            Необхідно розробити форму для реєстрації студента у веб-системі.
+            Необхідно заповнити наступні дані:
+         </span>
+
+         <ul>
+            <li>
+               Основні дані про студента, включають ПІБ, назву групи
+               (вибирається зі списку);
+            </li>
+
+            <li>
+               Форму навчання (бюджет або контракт), яка реалізується
+               у вигляді перемикача;
+            </li>
+
+            <li>
+               Коротку інформацію про студента;
+            </li>
+
+            <li>
+               Електронну адресу студента.
+            </li>
+         </ul>
+      </header>
+
+      <form method="post">
+
+         <fieldset>
+            <legend>Дані студента</legend>
+
+            <div>
+               <label>
+                  Прізвище
+                  <input
+                     id="surname"
+                     name="surname"
+                     type="text"
+                     required
+                  />
+               </label>
+
+               <label>
+                  Ім'я
+                  <input
+                     id="name"
+                     name="name"
+                     type="text"
+                     required
+                  />
+               </label>
+
+               <label>
+                  По-батькові
+                  <input
+                     id="patronymic"
+                     name="patronymic"
+                     type="text"
+                     required
+                  />
+               </label>
+            </div>
+
+            <div>
+               <label>
+                  Група
+                  <select id="group" name="group" required>
+                     <option value="" disabled selected>
+                        Оберіть групу
+                     </option>
+                     <option value="КН-31">КН-31</option>
+                     <option value="КН-32">КН-32</option>
+                  </select>
+               </label>
+            </div>
+         </fieldset>
+
+         <fieldset>
+            <legend>Форма навчання</legend>
+
+            <label>
+               <input
+                  type="radio"
+                  name="education"
+                  value="budget"
+                  required
+               />
+               Бюджет
+            </label>
+
+            <label>
+               <input
+                  type="radio"
+                  name="education"
+                  value="contract"
+               />
+               Контракт
+            </label>
+         </fieldset>
+
+         <fieldset>
+            <legend>Інформація про студента</legend>
+
+            <label>
+               Коротка інформація про студента
+               <br />
+               <textarea
+                  id="information"
+                  name="information"
+                  rows="6"
+                  cols="50"
+                  placeholder="Введіть коротку інформацію про себе..."
+                  required
+               ></textarea>
+            </label>
+
+            <br /><br />
+
+            <label>
+               E-mail
+               <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                  required
+               />
+            </label>
+         </fieldset>
+
+         <button type="submit">Зареєструватися</button>
+      </form>
+   </body>
+</html>

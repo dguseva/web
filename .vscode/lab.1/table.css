@@ -1,0 +1,62 @@
+body {
+   font-family: Arial, sans-serif;
+}
+
+img {
+   width: 50%;
+}
+
+table {
+   margin-top: 4vh;
+   width: 80%;
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+
+tr,
+td,
+th {
+   border: 1px solid black;
+   padding: 8px 12px;
+}
+
+table th {
+   font-weight: bold;
+}
+.fraction {
+            display: inline-flex;
+            flex-direction: column;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 1.1;
+         }
+
+         .fraction .top {
+            border-bottom: 1px solid black;
+            padding: 0 3px;
+         }
+
+         .fraction .bottom {
+            padding: 0 3px;
+         }
+
+         table {
+            border-collapse: collapse;
+            width: 70%;
+         }
+
+         th,
+         td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+         }
+
+         td:nth-child(2) {
+            text-align: left;
+         }
+
+         .section {
+            font-weight: bold;
+            text-align: left;
+         }
